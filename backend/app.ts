@@ -44,11 +44,7 @@ const schemaWithResolvers = addResolversToSchema({
 
 const app = express();
 
-/* istanbul ignore next */
-// @ts-expect-error
-if (global.__coverage__) {
-  require("@cypress/code-coverage/middleware/express")(app);
-}
+// Removed Cypress code coverage middleware block
 
 app.use(cors(corsOption));
 app.use(logger("dev"));

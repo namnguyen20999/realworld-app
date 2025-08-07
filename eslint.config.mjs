@@ -3,7 +3,6 @@ import { defineConfig } from 'eslint/config'
 import pluginJs from '@eslint/js'
 import pluginTs from 'typescript-eslint'
 import pluginTsParser from '@typescript-eslint/parser'
-import pluginCypress from 'eslint-plugin-cypress'
 
 export default defineConfig([
   {
@@ -17,7 +16,6 @@ export default defineConfig([
   },
   pluginJs.configs.recommended,
   pluginTs.configs.recommended,
-  pluginCypress.configs.recommended,
   {
     rules: {
       // TO-DO review violations of disabled rules
